@@ -1,12 +1,8 @@
-def impares
-  numero = 0 
-  
-  while numero <= 20 do
-    if numero % 2 != 0
-      puts numero
-    end
-    numero = numero + 1 
+for numero in 0..9
+  puts "Tabla de multiplicar del #{numero}:"
+  for multiplicador in 1..10
+    resultado = numero * multiplicador
+    puts "#{numero} x #{multiplicador} = #{resultado}"
   end
+  puts ""
 end
-
-impares
